@@ -1,0 +1,194 @@
+/* font-family: 'Raleway', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, rgba(43, 44, 46, 1) 0%, rgba(25, 25, 25, 1) 93%);
+    height: 100vh;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(circle, rgba(100, 100, 100, 1) 0%, rgba(25, 25, 25, 1) 93%);
+}
+
+.logo div {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+}
+
+.logo h1 {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header button.add {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background: radial-gradient(circle, rgba(160, 160, 160, 1) 0%, rgba(70, 70, 70, 1) 93%);
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+
+.header button.add:hover {
+    background: radial-gradient(circle, rgba(220, 220, 220, 1) 0%, rgba(70, 70, 70, 1) 100%);
+
+}
+
+.header button.remove-all {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background: radial-gradient(circle, rgba(160, 160, 160, 1) 0%, rgba(70, 70, 70, 1) 93%);
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+
+.header button.remove-all:hover {
+    background: radial-gradient(circle, rgba(220, 220, 220, 1) 0%, rgba(70, 70, 70, 1) 100%);
+
+}
+
+.note-area {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.note {
+    margin: 40px 20px;
+    width: 240px;
+    height: 270px;
+    background-color: rgb(255, 243, 0);
+    border: 1px solid black;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .06);
+}
+
+.note-header .delete-note {
+    background: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.note-body {
+    padding: 20px 15px;
+    font-size: 14px;
+}
+
+.create-note {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 600px;
+    height: 500px;
+    background-color: white;
+    display: none;
+}
+
+.create-note.vis {
+    display: block;
+}
+
+.lab1 {
+    position: absolute;
+    font-size: 30px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+}
+
+.create-note select {
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lab2 {
+    position: absolute;
+    font-size: 30px;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+}
+
+textarea {
+    position: absolute;
+    font-size: 16px;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 160px;
+    max-height: 160px;
+}
+
+p {
+    position: absolute;
+    font-size: 16px;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-weight: 700;
+    visibility: hidden;
+}
+
+.error {
+    visibility: visible;
+}
+
+.addNote {
+    position: absolute;
+    font-size: 22px;
+    top: 92%;
+    left: 20%;
+    width: 20%;
+    height: 30px;
+}
+
+.closeNote {
+    position: absolute;
+    font-size: 22px;
+    top: 92%;
+    right: 20%;
+    width: 20%;
+    height: 30px;
+}

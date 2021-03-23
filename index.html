@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f85160339b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <div><i class="fas fa-sticky-note"></i></div>
+            <h1>MyNotes</h1>
+        </div>
+        <button class="add">Dodaj notatkę</button>
+        <button class="remove-all">Usuń wszystkie</button>
+    </div>
+
+    <div class="note-area">
+
+    </div>
+
+    <div class="create-note">
+        <label for="category" class="lab1">Wybierz kategorie</label>
+        <select id="category" onchange="selectValue()">
+            <option value="0" disabled selected>- Wybierz kategorie -</option>
+            <option value="1">Zakupy</option>
+            <option value="1">Praca</option>
+            <option value="1">Inne</option>
+        </select>
+
+        <label for="txt" class="lab2">Wpisz tekst</label>
+        <textarea id="txt"></textarea>
+
+        <p>Uzupełnij wszystkie pola!</p>
+
+        <button class="addNote">Akceptuj</button>
+        <button class="closeNote">Zamknij</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
