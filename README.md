@@ -1,4 +1,4 @@
-Simply ChatBox project in vanilla JavaScript
+Simply MyNotes project in vanilla JavaScript
 
 1.Type in VSC console: git clone https://github.com/hubr33/MyNotes-in-JS.git
 
